@@ -192,12 +192,15 @@ html {
 
 body {
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   font-size: 14px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+p {
+  font-size: 16px; }
 
 .wrapper {
   max-width: 1152px;
@@ -385,6 +388,3 @@ hr {
       #hero .hero-body .content h2.name {
         color: #fff;
         font-size: 50px; }
-
-html {
-  background: tomato; }
