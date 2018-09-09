@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
 html {
@@ -190,7 +191,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #0d1218 url("../img/ep_naturalblack.png");
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -199,12 +200,16 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .wrapper {
-  width: 100%;
-  max-width: 1100px;
+  max-width: 1152px;
+  width: 1152px;
   margin: 0 auto; }
 
-section {
-  display: -webkit-box; }
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: .75rem; }
 
 .button,
 button,
@@ -327,6 +332,25 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+#header nav {
+  float: right;
+  padding: 1.2rem 0;
+  box-shadow: none;
+  z-index: auto; }
+
+#header .main-nav {
+  display: flex;
+  margin: 2em; }
+  #header .main-nav li {
+    list-style: none;
+    margin: 0 1.8em; }
+  #header .main-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    hover-color: #FF4136; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -344,8 +368,23 @@ hr {
   width: 100%;
   left: 0; }
 
-body {
-  background-color: #ccc; }
+#hero {
+  background: center/cover no-repeat url("https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIxMTIzfQ&s=313d1aaa534babb07c6a2d1a490b1449&auto=format&fit=crop&w=1567&q=80") rgba(0, 0, 0, 0.69);
+  background-blend-mode: overlay;
+  height: 100vh; }
+  #hero .hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-top: 20em; }
+    #hero .hero-body .content {
+      color: #fff; }
+      #hero .hero-body .content p.introduct {
+        font-size: 20px;
+        width: 50%;
+        font-style: oblique; }
+      #hero .hero-body .content h2.name {
+        color: #fff;
+        font-size: 50px; }
 
 html {
   background: tomato; }

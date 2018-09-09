@@ -1,2 +1,22 @@
-body
-  background-color: #ccc
+#hero
+    background: center / cover no-repeat url("https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIxMTIzfQ&s=313d1aaa534babb07c6a2d1a490b1449&auto=format&fit=crop&w=1567&q=80") rgba(0,0,0,0.69)
+    background-blend-mode: overlay
+    height: 100vh
+
+    .hero-body
+        flex-grow: 1
+        flex-shrink: 0
+        padding-top: 20em
+
+        .content
+            color: $white
+
+            p.introduct
+                font-size: 20px
+                width: 50%
+                font-style: oblique
+
+
+            h2.name
+                color: $white
+                font-size: 50px
